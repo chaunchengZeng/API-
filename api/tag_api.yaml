@@ -1,0 +1,21 @@
+
+get:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/get
+  params:
+    access_token: ${token}
+    tagid: 3
+  json:
+
+
+
+
+add:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/create
+  params:
+    access_token: ${token}
+    tagid: 3
+  json:
+    tagname: Tencent
+
