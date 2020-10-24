@@ -1,0 +1,10 @@
+test_add: ["demo1", "demo2", "demo3"]
+
+# 其实没多大必要对步骤进行数据驱动
+# 法一：httprunner后期的数据驱动
+steps:
+  - {method: get}
+  - {path: '$..[?@.name=="${name}"]', extract: before}
+  - {method: get}
+  - {path: '$..[?@.name=="${name}"]', extract: after}
+  - {assert: '1 ==1'}

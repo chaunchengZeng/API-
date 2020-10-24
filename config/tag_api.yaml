@@ -1,0 +1,22 @@
+# 若下一行面加- 则此此行的字段表示为列表
+get:
+  method: get
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/list
+  params:
+    access_token: ${access_token}
+
+add:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/create
+  params:
+    access_token: ${access_token}
+  json:
+    # json中必须的参数
+    tagname: ${tagname}
+
+delete:
+  method: get
+  url: https://qyapi.weixin.qq.com/cgi-bin/tag/delete
+  params:
+    access_token: ${access_token}
+    tagid: ${tagid}
