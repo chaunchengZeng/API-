@@ -22,9 +22,9 @@ class TestTag(object):
         r = self.tag.get()
         assert r["errcode"] == 0
 
-    def test_delete(self):
-        r = self.tag.delete(10)
-        assert r["errcode"] == 0
+    # def test_delete(self):
+    #     r = self.tag.delete(10)
+    #     assert r["errcode"] == 0
 
     @pytest.mark.parametrize("tagname", data["test_add"])
     def test_step_run(self, tagname):
