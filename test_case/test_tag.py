@@ -1,3 +1,4 @@
+# encoding: utf-8
 import pytest
 from api.tag import Tag
 from base.base import Base
