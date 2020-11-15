@@ -2,7 +2,6 @@
 import requests
 import json
 from jsonpath import jsonpath
-
 import yaml
 
 
