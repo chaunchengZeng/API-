@@ -1,3 +1,6 @@
+# encoding: utf-8
+
+
 class Test(object):
 
     def test_01(self):
