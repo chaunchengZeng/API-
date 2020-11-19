@@ -6,7 +6,7 @@ from base.base import Base
 
 class TestTag(object):
     # 测试数据的测试驱动
-    data = Base.yaml_load("../config/test_tag_step.yaml")
+    data = Base.yaml_load("./config/test_tag_step.yaml")
 
     @classmethod
     def setup_class(cls):
